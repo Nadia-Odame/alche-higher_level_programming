@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    """Print the last digit of a number and return it."""
-    last = abs(number) % 10
-    print("{}".format(last), end="")
-    return last
+def uppercase(str):
+    """Print a string in uppercase followed by a new line."""
+    for char in str:
+        # Convert lowercase letters to uppercase using ASCII
+        if 'a' <= char <= 'z':
+            print("{}".format(chr(ord(char) - 32)), end="")
+        else:
+            print("{}".format(char), end="")
+    print()
