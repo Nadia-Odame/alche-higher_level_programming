@@ -1,0 +1,4 @@
+#!/bin/bash
+# Compile $PYFILE into bytecode and output as $PYFILEc
+python3 -m py_compile "$PYFILE"
+mv "__pycache__/${PYFILE%.*}".cpython-*.pyc "$PYFILE"c
