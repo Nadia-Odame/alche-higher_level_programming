@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for c in range(97, 123):  # ASCII codes for a-z
+for c in range(97, 123):
     print("{}".format(chr(c)), end="")
